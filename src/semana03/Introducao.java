@@ -1,5 +1,7 @@
 package semana03;
 
+import java.util.Scanner;
+
 public class Introducao {
     public static void main(String[] args) {
         // Comentario de uma linha
@@ -34,6 +36,39 @@ public class Introducao {
          System.out.println(nome);
          System.out.println(nome.toLowerCase());
          System.out.println(nome.toUpperCase());
+
+         // variáveis e constantes
+         int idade = 20;
+         int idade2;
+         idade2 = 30;
+
+         // Java 10 - inferência de tipo com var
+         var idade3 = 15;
+         var nome2 = "maria";
+
+         // constantes - keyword final 
+         final double TESTE = 20.2;
+         final double pi = 3.14;
+
+         // Entrada e saída de dados
+         
+         // Entrada - Classes Scanner 
+         // Saída - System.out
+
+         Scanner sc = new Scanner(System.in);
+         
+
+         System.out.println("entre com o seu nome");
+         String nomeInformado = sc.nextLine(); 
+
+         System.out.println("entre com a sua idade");
+         int idadeInformada = sc.nextInt(); 
+
+         System.out.println(nomeInformado + " " + idadeInformada);
+         System.out.printf("%s %d \n", nomeInformado, idadeInformada);
+ 
+         sc.close();
+
 
       
 
