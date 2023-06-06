@@ -15,4 +15,5 @@ public class Quadrado {
     public double calcularPerimetro() {
         return 4 * lado;
     }
+    
 }

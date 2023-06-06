@@ -4,6 +4,7 @@ public class Programa {
     public static void main(String[] args) {
         Quadrado quadrado = new Quadrado(10.0);
         //quadrado.lado = 10.0;
+        quadrado.setLado(-10);
 
         double area = quadrado.calcularArea();
         System.out.println(area);
